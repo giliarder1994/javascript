@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá. mundo!</h1>
+    <p>Já me livrei desse problema!</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //o window.prompt ele sempre retorna uma string mesmo digitando apenas numeros como valor, é uma caracteristica do comando
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) //string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} será: ${s}`) //Concatenação
+        // (number + number) para adição
+        // (string + string) para Concatenação
+        // para fazer a conversão de string para number usar os comandos Number.parseInt(para numeros inteiros) ou Number.parseFloat(para numeros decimais) ou podemos apenas simplificar para Number(que define nao importa se é inteiro ou decimal)
+        // pode usar o comando .parseInt diretamente ao inves de Number.parseInt
+        // para converter de number para string utilizasse os comandos String(apenas o string) ou n.toString(o n do exemplo seria o elemento que vamos converter que tem a mesma função do primeiro)
+
+        //${n} é um placeholder e tem que ser usado entre crases
+    </script>
+    
+</body>
+</html>
