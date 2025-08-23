@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey;
+        }
+
+        
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Verificaçã de Nacionalidade</h1>
+    <p>Em qual país você mora?</p>    
+    <p>Digite aqui: <input type="text" maxlength="15" name="txtpais" id="txtpais"></p>
+    <input type="button" value="Verificar" onclick="verificar()">     
+    <div class="res">
+              
+    </div>
+    
+    <script>
+        function verificar() {
+            var txtpais = 'Brasil'
+            
+            var res = window.document.querySelector('div.res')
+            res.innerHTML = `Vivendo no ${txtpais}`
+            if (txtpais == Brasil) {
+                res.innerHTML += `você é Brasileiro.`
+            }
+        }
+    </script>
+</body>
+</html>
